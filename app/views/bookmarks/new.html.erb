@@ -1,5 +1,11 @@
-<%= simple_form_for [@list, @bookmark], defaults: { input_html: { class: 'form-group' } } do |f| %>
+<div class="container justify-content-center d-flex p-2 mt-3">
+
+
+<%= simple_form_for [@list, @bookmark], defaults: { input_html: { class: 'form-group d-flex justify-content-center' } } do |f| %>
+    <div class="text-white">
     <%= f.association :movie%>
     <%= f.input :comment %>
-    <%= f.button :submit, class: 'btn btn-primary'  %>
+    </div>
+    <%= f.button :submit, class: 'btn btn-warning'  %>
   <% end %>
+</div>
